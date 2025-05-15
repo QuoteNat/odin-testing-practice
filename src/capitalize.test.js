@@ -1,7 +1,13 @@
 import { capitalize } from "./capitalize";
 
-test('Capitalize "apple"', () => expect(capitalize("apple")).toMatch("Apple"));
-test('Capitalize "banana"', () =>
-  expect(capitalize("banana")).toMatch("Banana"));
-test('Capitalize "pear"', () => expect(capitalize("pear")).toMatch("Pear"));
+test("Capitalize words", () => {
+  let words = [
+    { input: "apple", expected: "Apple" },
+    { input: "pear", expected: "Pear" },
+    { input: "banana", expected: "Banana" },
+  ];
+  words.forEach((test) => {
+    expect(capitalize(test.input)).toMatch(test.expected);
+  });
+});
 test("Empty string", () => expect(capitalize("")).toMatch(""));
