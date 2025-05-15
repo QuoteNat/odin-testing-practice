@@ -1,9 +1,11 @@
 import { reverseString } from "./reverseString";
 
-test("Even length string", () => {
-  expect(reverseString("ab")).toMatch("ba");
-});
-
-test("Odd length string", () => {
-  expect(reverseString("bird")).toMatch("drib");
+test("Reverse strings", () => {
+  let tests = [
+    { input: "ab", expected: "ba" },
+    { input: "bird", expected: "drib" },
+  ];
+  tests.forEach((test) => {
+    expect(reverseString(test.input)).toMatch(test.expected);
+  });
 });
