@@ -1,4 +1,7 @@
 export function reverseString(string) {
-  if (string == "ab") return "ba";
-  if (string == "bird") return "drib";
+  let reverse = "";
+  for (const char of string) {
+    reverse = char + reverse;
+  }
+  return reverse;
 }
