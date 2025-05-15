@@ -9,3 +9,5 @@ test("Reverse strings", () => {
     expect(reverseString(test.input)).toMatch(test.expected);
   });
 });
+
+test("Reverse an empty string", () => expect(reverseString("")).toMatch(""));
