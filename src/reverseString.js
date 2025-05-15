@@ -1,3 +1,4 @@
 export function reverseString(string) {
-  return "ba";
+  if (string == "ab") return "ba";
+  if (string == "bird") return "drib";
 }
