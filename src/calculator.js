@@ -9,4 +9,7 @@ export class Calculator {
     if (divisor == 0) return undefined;
     return dividend / divisor;
   }
+  multiply(left, right) {
+    return left * right;
+  }
 }
