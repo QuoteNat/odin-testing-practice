@@ -4,8 +4,13 @@ export function analyzeArray(array) {
     if (cur < prev) return cur;
     return prev;
   });
+  let max = array.reduce((prev, cur) => {
+    if (cur > prev) return cur;
+    return prev;
+  });
   return {
     average: average,
     min: min,
+    max: max,
   };
 }
