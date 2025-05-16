@@ -12,5 +12,6 @@ export function analyzeArray(array) {
     average: average,
     min: min,
     max: max,
+    length: array.length,
   };
 }
