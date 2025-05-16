@@ -10,3 +10,6 @@ test("Wrapping", () => {
 
 test("Case preservation", () =>
   expect(caesarCipher("HeLLo", 3)).toMatch("KhOOr"));
+
+test("Punctuation", () =>
+  expect(caesarCipher("Hello, World!", 3)).toMatch("Khoor, Zruog!"));
